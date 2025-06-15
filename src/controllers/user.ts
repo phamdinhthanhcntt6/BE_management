@@ -67,3 +67,8 @@ export const login = async (req: Request, res: Response) => {
     res.status(500).json({ message: error.message });
   }
 };
+
+export const getMe = async (req: Request, res: Response) => {
+  const user = (req as any).user;
+  res.json({ message: "Current user info", user });
+};

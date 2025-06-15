@@ -12,6 +12,4 @@ app.get("/", (_req, res) => {
   res.send("User");
 });
 
-console.log("JWT_SECRET:", process.env.JWT_SECRET);
-
 export default app;
