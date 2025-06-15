@@ -8,7 +8,7 @@ dotenv.config();
 const PORT = process.env.PORT || 5000;
 const MONGO_URI = process.env.MONGO_URI || "";
 
-app.use("/api/user", userRouter);
+app.use("/api/auth", userRouter);
 
 mongoose
   .connect(MONGO_URI)
