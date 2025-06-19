@@ -5,7 +5,7 @@ export const getAllUser = async (req: Request, res: Response) => {
     const users = await (await import("../models/user")).default
       .find()
       .select("-password");
-    console.log(users);
+
     res.json({ users });
   } catch (error: any) {
     res.status(400).json({ message: error.message });
