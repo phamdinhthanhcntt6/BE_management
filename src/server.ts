@@ -18,6 +18,7 @@ mongoose
     console.log("Connected to MongoDB");
     app.listen(PORT, () => {
       console.log(`Server is running on port ${PORT}`);
+      console.log(`Swagger documentation available at http://localhost:${PORT}/api-docs`);
     });
   })
   .catch((err) => {
